@@ -1,12 +1,12 @@
 import datetime
-import smbus
+import smbus2
 from scipy import fftpack
 import numpy as np
 
 
 # select the correct i2c bus for this revision of Raspberry Pi
 revision = ([l[12:-1] for l in open('/proc/cpuinfo','r').readlines() if l[:8]=="Revision"]+['0000'])[0]
-bus = smbus.SMBus(1 if int(revision, 16) >= 4 else 0)
+bus = smbus2.SMBus(1 if int(revision, 16) >= 4 else 0)
 
 # ADXL345 constants
 EARTH_GRAVITY_MS2   = 9.80665
