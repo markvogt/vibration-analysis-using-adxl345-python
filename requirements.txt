@@ -1,0 +1,5 @@
+DateTime
+smbus2
+scipy
+numpy
+matplotlib
