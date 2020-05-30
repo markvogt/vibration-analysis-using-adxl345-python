@@ -168,9 +168,9 @@ def mainprog():
     vdc_channel_2 = vdc_channel_2 / num_data
     vdc_channel_3 = vdc_channel_3 / num_data
     
-    print"Vdc Channel 1: ",vdc_channel_1
-    print"Vdc Channel 2: ",vdc_channel_2
-    print"Vdc Channel 3: ",vdc_channel_3
+    print("Vdc Channel 1: " + vdc_channel_1)
+    print("Vdc Channel 2: " + vdc_channel_2)
+    print("Vdc Channel 3: " + vdc_channel_3)
     
     #####Subtract DC offset#####
     for indice in X:
